@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Links</title>
+    <style>
+        /* Estilos da Página */
+        body {
+            /* Fundo preto sólido, como no exemplo */
+            background-color: #000000;
+            margin: 0;
+            /* Um pequeno espaço nas laterais */
+            padding: 15px; 
+        }
+
+        .container {
+            /* Largura máxima para não ficar muito largo no computador */
+            max-width: 480px; 
+            /* Centraliza o container na página */
+            margin: 0 auto; 
+        }
+
+        .links-list {
+            /* Organiza as imagens em uma coluna */
+            display: flex;
+            flex-direction: column;
+            /* Espaçamento entre cada imagem/link */
+            gap: 15px; 
+        }
+
+        .link-image a {
+            /* Remove a linha azul padrão dos links */
+            text-decoration: none;
+        }
+
+        .link-image img {
+            /* Faz a imagem ocupar 100% da largura do container */
+            width: 100%; 
+            /* Remove qualquer espaço extra que o navegador possa adicionar */
+            display: block; 
+            /* Efeito suave ao passar o mouse (visível no PC) */
+            transition: transform 0.2s ease-in-out; 
+            /* Opcional: Adiciona cantos levemente arredondados */
+            border-radius: 8px;
+        }
+
+        /* Efeito para destacar a imagem ao passar o mouse */
+        .link-image:hover img {
+            transform: scale(1.03); /* Aumenta levemente o tamanho */
+        }
+        
+        /* --- NOVO ESTILO ADICIONADO --- */
+        /* Estilo para a borda branca fina */
+        .bordered-image img {
+            /* Adiciona a borda: 1px de espessura, sólida e na cor branca */
+            border: 1px solid #ffffff; 
+            /* Garante que a borda não aumente o tamanho da imagem */
+            box-sizing: border-box; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="links-list">
+
+            <!-- IMAGEM 1 (Banner Principal) - SEM borda -->
+            <div class="link-image">
+                <a href="#">
+                    <img src="Story do instagram de agende seu horário para barbearia ousado laranja e branco (2).png" alt="Banner principal do evento">
+                </a>
+            </div>
+
+            <!-- IMAGEM 2 (Primeiro Link) - COM borda -->
+            <div class="link-image bordered-image">
+                <a href="#">
+                    <img src="1.png" alt="Link para Barbearia de Milhões">
+                </a>
+            </div>
+
+            <!-- IMAGEM 3 (Segundo Link) - COM borda -->
+            <div class="link-image bordered-image">
+                <a href="#">
+                    <img src="3.png" alt="Link para Barber Day Academy">
+                </a>
+            </div>
+
+            <!-- IMAGEM 4 (Terceiro Link) - COM borda -->
+            <div class="link-image bordered-image">
+                <a href="https://wa.me/5548988472481?text=Ol%C3%A1%2C%20queria%20agendar%20uma%20sess%C3%A3o%20de%20fotoss9%20%20%20.">
+                    <img src="2.png" alt="Link para Barber Day Business">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
